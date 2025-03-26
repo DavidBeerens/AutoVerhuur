@@ -1,0 +1,50 @@
+CREACREATE TABLE [dbo].Vestigingen
+(
+	Luchthaven VARCHAR(50) NOT NULL PRIMARY KEY,
+	Straat VARCHAR(50) NOT NULL,
+	Postcode VARCHAR(50) NOT NULL,
+	Plaats VARCHAR(50) NOT NULL,
+	Land VARCHAR(50) NOT NULL
+)
+
+
+
+
+CREATE TABLE [dbo].Autos
+(
+	Nummerplaat VARCHAR(20) NOT NULL PRIMARY KEY,
+	Model VARCHAR(50) NOT NULL,
+	Zitplaatsen TINYINT NOT NULL,
+	Motortype TINYINT NOT NULL,
+	Luchthaven VARCHAR(50) NOT NULL,
+	CONSTRAINT FK_VestID FOREIGN KEY (Luchthaven) REFERENCES Vestigingen(Luchthaven)
+)
+
+
+
+
+CREATE TABLE [dbo].Reservaties
+(
+	ReserveringsId BINARY(16) NOT NULL PRIMARY KEY,
+	KlantEmail VARCHAR(50) NOT NULL,
+	AutoNummerplaat VARCHAR(20) NOT NULL,
+	RetourLuchthaven VARCHAR(50) NOT NULL,
+	StartTijdStip DATETIME NOT NULL,
+	EindTijdStip DATETIME NOT NULL,
+	CONSTRAINT FK_KlantEmil FOREIGN KEY (KlantEmail) REFERENCES Klanten(Email),
+	CONSTRAINT FK_AutoNrPlaat FOREIGN KEY (AutoNummerPlaat) REFERENCES Autos(Nummerplaat)
+)
+
+
+
+
+CREATE TABLE [dbo].Klanten
+(
+	Email VARCHAR(50) NOT NULL PRIMARY KEY,
+	Voornaam VARCHAR(50) NOT NULL,
+	Achternaam VARCHAR(50) NOT NULL,
+	Straat VARCHAR(50),
+	Postcode VARCHAR(50),
+	Woonplaats VARCHAR(50),
+	Land VARCHAR(50)
+)
