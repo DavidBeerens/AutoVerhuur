@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein.Tests\\AutoVerhuurProject.Domein.Tests.csproj": {}
+    "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein.Tests\\AutoVerhuurProject.Domein.Tests.csproj": {}
   },
   "projects": {
-    "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein.Tests\\AutoVerhuurProject.Domein.Tests.csproj": {
+    "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein.Tests\\AutoVerhuurProject.Domein.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein.Tests\\AutoVerhuurProject.Domein.Tests.csproj",
+        "projectUniqueName": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein.Tests\\AutoVerhuurProject.Domein.Tests.csproj",
         "projectName": "AutoVerhuurProject.Domein.Tests",
-        "projectPath": "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein.Tests\\AutoVerhuurProject.Domein.Tests.csproj",
+        "projectPath": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein.Tests\\AutoVerhuurProject.Domein.Tests.csproj",
         "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-        "outputPath": "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein.Tests\\obj\\",
+        "outputPath": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein\\AutoVerhuurProject.Domein.csproj": {
-                "projectPath": "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein\\AutoVerhuurProject.Domein.csproj"
+              "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein\\AutoVerhuurProject.Domein.csproj": {
+                "projectPath": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein\\AutoVerhuurProject.Domein.csproj"
               }
             }
           }
@@ -95,14 +95,14 @@
         }
       }
     },
-    "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein\\AutoVerhuurProject.Domein.csproj": {
+    "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein\\AutoVerhuurProject.Domein.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein\\AutoVerhuurProject.Domein.csproj",
+        "projectUniqueName": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein\\AutoVerhuurProject.Domein.csproj",
         "projectName": "AutoVerhuurProject.Domein",
-        "projectPath": "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein\\AutoVerhuurProject.Domein.csproj",
+        "projectPath": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein\\AutoVerhuurProject.Domein.csproj",
         "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-        "outputPath": "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein\\obj\\",
+        "outputPath": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

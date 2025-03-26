@@ -5,18 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoVerhuurProject.Presentatie.GebruikersGui"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="450" Width="800">
+        Title="LoginWindow" Height="800" Width="800">
     <Grid>
-        <TextBlock x:Name="TxtVoornaam" HorizontalAlignment="Left" Margin="55,40,0,0" TextWrapping="Wrap" Text="Voornaam" VerticalAlignment="Top"/>
-        <TextBox x:Name="TxtBoxVoornaam" HorizontalAlignment="Left" Margin="122,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <StackPanel Margin="50, 50, 0, 0" Orientation="Horizontal">
+            <TextBlock x:Name="TxtVoornaam" Width="70" Text="Voornaam" VerticalAlignment="Top"/>
+            <TextBox x:Name="TxtBoxVoornaam" Margin="5, 0, 0, 0" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
 
-        <TextBlock x:Name="TxtAchternaam" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Achternaam" VerticalAlignment="Top" Margin="55,78,0,0"/>
-        <TextBox x:Name="TxtBoxAchternaam" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" Margin="132,78,0,0"/>
+        <StackPanel Margin="50, 100, 0, 0" Orientation="Horizontal">
+            <TextBlock x:Name="TxtAchternaam" Width="70" TextWrapping="Wrap" Text="Achternaam" VerticalAlignment="Top"/>
+            <TextBox x:Name="TxtBoxAchternaam" Margin="5, 0, 0, 0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
 
-        <TextBlock x:Name="TxtLijst" HorizontalAlignment="Center" Margin="0,101,0,0" TextWrapping="Wrap" Text="Lijst van klanten" VerticalAlignment="Top" Height="290" Width="566" Background="#7FC8C8C8"/>
+        <StackPanel Margin="50, 200, 0, 0">
+            <TextBlock x:Name="TxtEmail" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" RenderTransformOrigin="0.012,-2.17"/>
+            <TextBox x:Name="TxtBoxEmail" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Margin="0, 5, 0, 5"/>
+            <Button x:Name="BtnInloggen" Content="Inloggen" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BtnInloggen_Click" Width="200" Height="30"/>
+        </StackPanel>
 
-        <TextBlock x:Name="TxtEmail" HorizontalAlignment="Left" Margin="451,48,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top"/>
-        <TextBox x:Name="TxtBoxEmail" HorizontalAlignment="Left" Margin="496,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="BtnInloggen" Content="Inloggen" HorizontalAlignment="Left" Margin="656,48,0,0" VerticalAlignment="Top" Click="BtnInloggen_Click"/>
+        <TextBox x:Name="TxtLijst" TextAlignment="Center" VerticalScrollBarVisibility="Auto" IsReadOnly="True" Background="#7FC8C8C8" HorizontalAlignment="Left" Margin="300,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="650"/>
     </Grid>
 </Window>

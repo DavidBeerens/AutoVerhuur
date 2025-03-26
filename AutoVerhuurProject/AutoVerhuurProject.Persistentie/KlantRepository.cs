@@ -51,30 +51,37 @@ internal class KlantRepository
         using var connection = new SqlConnection(connectionString);
         connection.Open();
 
-        const string query = "SELECT * FROM Klanten " + 
-            "WHERE Voornaam LIKE '@Voornaam%' AND Achternaam LIKE '@Achternaam%';";
+        const string query = "SELECT * FROM Klanten " +
+            "WHERE Voornaam LIKE CAST(@Voornaam AS NVARCHAR) AND Achternaam LIKE CAST(@Achternaam AS NVARCHAR);";
 
         using var command = new SqlCommand(query, connection);
-        command.Parameters.AddWithValue("@Voornaam", voornaam);
-        command.Parameters.AddWithValue("@Achternaa", achternaam);
+        command.Parameters.AddWithValue("@Voornaam", voornaam + "%");
+        command.Parameters.AddWithValue("@Achternaam", achternaam + "%");
 
         using var reader = command.ExecuteReader();
 
 
         while (reader.Read()) {
-            var Klant = new KlantDto (
-                reader.GetString(reader.GetOrdinal("Email")),
-                reader.GetString(reader.GetOrdinal("Voornaam")),
-                reader.GetString(reader.GetOrdinal("Achternaam")),
-                reader.GetString(reader.GetOrdinal("Straat")),
-                reader.GetString(reader.GetOrdinal("Postcode")),
-                reader.GetString(reader.GetOrdinal("Woonplaats")),
-                reader.GetString(reader.GetOrdinal("Land"))
-            );
+                var Klant = new KlantDto(
+                    reader.GetString(0),
+                    reader.GetString(1),
+                    reader.GetString(2),
+                    reader.GetString(3),
+                    reader.GetString(4),
+                    reader.GetString(5),
+                    reader.GetString(6)
+                //reader.GetString(reader.GetOrdinal("Email")),
+                //reader.GetString(reader.GetOrdinal("Voornaam")),
+                //reader.GetString(reader.GetOrdinal("Achternaam")),
+                //reader.GetString(reader.GetOrdinal("Straat")),
+                //reader.GetString(reader.GetOrdinal("Postcode")),
+                //reader.GetString(reader.GetOrdinal("Woonplaats")),
+                //reader.GetString(reader.GetOrdinal("Land"))
+                );
 
-            results.Add(Klant);
+                results.Add(Klant);
+
         }
-
         return results;
     }
 }

@@ -1684,11 +1684,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Presentatie.Gui\\AutoVerhuurProject.Presentatie.GegevensGui.csproj",
+      "projectUniqueName": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Presentatie.Gui\\AutoVerhuurProject.Presentatie.GegevensGui.csproj",
       "projectName": "AutoVerhuurProject.Presentatie.GegevensGui",
-      "projectPath": "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Presentatie.Gui\\AutoVerhuurProject.Presentatie.GegevensGui.csproj",
+      "projectPath": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Presentatie.Gui\\AutoVerhuurProject.Presentatie.GegevensGui.csproj",
       "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-      "outputPath": "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Presentatie.Gui\\obj\\",
+      "outputPath": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Presentatie.Gui\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1709,11 +1709,11 @@
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows",
           "projectReferences": {
-            "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein\\AutoVerhuurProject.Domein.csproj": {
-              "projectPath": "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein\\AutoVerhuurProject.Domein.csproj"
+            "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein\\AutoVerhuurProject.Domein.csproj": {
+              "projectPath": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Domein\\AutoVerhuurProject.Domein.csproj"
             },
-            "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Persistentie\\AutoVerhuurProject.Persistentie.csproj": {
-              "projectPath": "D:\\School\\HoGent\\S2\\Programmeren_Gevorderd_1\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Persistentie\\AutoVerhuurProject.Persistentie.csproj"
+            "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Persistentie\\AutoVerhuurProject.Persistentie.csproj": {
+              "projectPath": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Persistentie\\AutoVerhuurProject.Persistentie.csproj"
             }
           }
         }
