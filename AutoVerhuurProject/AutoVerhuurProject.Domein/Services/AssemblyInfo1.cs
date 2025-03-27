@@ -19,3 +19,4 @@ using System.Runtime.InteropServices;
 
 [assembly: InternalsVisibleTo("AutoVerhuurProject.Domein.Tests")]
 [assembly: InternalsVisibleTo("AutoVerhuurProject.Presentatie.GegevensGui")]
+[assembly: InternalsVisibleTo("AutoVerhuurProject.Presentatie.GebruikersGui")]

@@ -17,5 +17,4 @@ using System.Runtime.InteropServices;
 
 [assembly: Guid("419a876f-d856-4251-bf64-a2e5d9528029")]
 
-[assembly: InternalsVisibleTo("AutoVerhuurProject.Presentatie.GegevensGui")]
-[assembly: InternalsVisibleTo("AutoVerhuurProject.Presentatie.GebruikersGui")]
+//[assembly: InternalsVisibleTo("AutoVerhuurProject.Domein")]

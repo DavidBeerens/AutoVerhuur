@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoVerhuurProject.Persistentie")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e063d7ba47512fdf640ae3688f8c752aa895036")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90ddfedb01894509848f00a5fbb5297383a4c751")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoVerhuurProject.Persistentie")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoVerhuurProject.Persistentie")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

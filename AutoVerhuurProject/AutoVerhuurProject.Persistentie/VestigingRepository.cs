@@ -5,7 +5,7 @@ using System.Windows.Markup;
 
 namespace AutoVerhuurProject.Persistentie;
 
-internal class VestigingRepository
+public class VestigingRepository
 {
     private readonly string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=AutoVerhuurDB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
     public List<string> errors = new List<string>();

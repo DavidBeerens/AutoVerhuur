@@ -4,7 +4,7 @@ using Microsoft.Data.SqlClient;
 
 namespace AutoVerhuurProject.Persistentie;
 
-internal class AutoRepository : IAutoRepositoryFull
+public class AutoRepository : IAutoRepositoryFull
 {
     private readonly string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=AutoVerhuurDB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
     public List<string> errors = new List<string>();
