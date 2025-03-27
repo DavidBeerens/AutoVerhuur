@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{19D3A6FC-909D-46C9-AA41-1B296B164132}|AutoVerhuurProject.Presentatie.GebruikersGui\\AutoVerhuurProject.Presentatie.GebruikersGui.csproj|d:\\school\\autoverhuur - beerens david\\autoverhuur\\autoverhuurproject\\autoverhuurproject.presentatie.gebruikersgui\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19D3A6FC-909D-46C9-AA41-1B296B164132}|AutoVerhuurProject.Presentatie.GebruikersGui\\AutoVerhuurProject.Presentatie.GebruikersGui.csproj|solutionrelative:autoverhuurproject.presentatie.gebruikersgui\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{19D3A6FC-909D-46C9-AA41-1B296B164132}|AutoVerhuurProject.Presentatie.GebruikersGui\\AutoVerhuurProject.Presentatie.GebruikersGui.csproj|d:\\school\\autoverhuur - beerens david\\autoverhuur\\autoverhuurproject\\autoverhuurproject.presentatie.gebruikersgui\\reservatieaanmakenwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19D3A6FC-909D-46C9-AA41-1B296B164132}|AutoVerhuurProject.Presentatie.GebruikersGui\\AutoVerhuurProject.Presentatie.GebruikersGui.csproj|solutionrelative:autoverhuurproject.presentatie.gebruikersgui\\reservatieaanmakenwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19D3A6FC-909D-46C9-AA41-1B296B164132}|AutoVerhuurProject.Presentatie.GebruikersGui\\AutoVerhuurProject.Presentatie.GebruikersGui.csproj|d:\\school\\autoverhuur - beerens david\\autoverhuur\\autoverhuurproject\\autoverhuurproject.presentatie.gebruikersgui\\reservatieaanmakenwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19D3A6FC-909D-46C9-AA41-1B296B164132}|AutoVerhuurProject.Presentatie.GebruikersGui\\AutoVerhuurProject.Presentatie.GebruikersGui.csproj|solutionrelative:autoverhuurproject.presentatie.gebruikersgui\\reservatieaanmakenwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19D3A6FC-909D-46C9-AA41-1B296B164132}|AutoVerhuurProject.Presentatie.GebruikersGui\\AutoVerhuurProject.Presentatie.GebruikersGui.csproj|d:\\school\\autoverhuur - beerens david\\autoverhuur\\autoverhuurproject\\autoverhuurproject.presentatie.gebruikersgui\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{19D3A6FC-909D-46C9-AA41-1B296B164132}|AutoVerhuurProject.Presentatie.GebruikersGui\\AutoVerhuurProject.Presentatie.GebruikersGui.csproj|solutionrelative:autoverhuurproject.presentatie.gebruikersgui\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19D3A6FC-909D-46C9-AA41-1B296B164132}|AutoVerhuurProject.Presentatie.GebruikersGui\\AutoVerhuurProject.Presentatie.GebruikersGui.csproj|d:\\school\\autoverhuur - beerens david\\autoverhuur\\autoverhuurproject\\autoverhuurproject.presentatie.gebruikersgui\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19D3A6FC-909D-46C9-AA41-1B296B164132}|AutoVerhuurProject.Presentatie.GebruikersGui\\AutoVerhuurProject.Presentatie.GebruikersGui.csproj|solutionrelative:autoverhuurproject.presentatie.gebruikersgui\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA85C74F-88F4-4293-A1B1-839B31D54B78}|AutoVerhuurProject.Persistentie\\AutoVerhuurProject.Persistentie.csproj|d:\\school\\autoverhuur - beerens david\\autoverhuur\\autoverhuurproject\\autoverhuurproject.persistentie\\klantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA85C74F-88F4-4293-A1B1-839B31D54B78}|AutoVerhuurProject.Persistentie\\AutoVerhuurProject.Persistentie.csproj|solutionrelative:autoverhuurproject.persistentie\\klantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA85C74F-88F4-4293-A1B1-839B31D54B78}|AutoVerhuurProject.Persistentie\\AutoVerhuurProject.Persistentie.csproj|d:\\school\\autoverhuur - beerens david\\autoverhuur\\autoverhuurproject\\autoverhuurproject.persistentie\\autorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA85C74F-88F4-4293-A1B1-839B31D54B78}|AutoVerhuurProject.Persistentie\\AutoVerhuurProject.Persistentie.csproj|solutionrelative:autoverhuurproject.persistentie\\autorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,28 +38,40 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Presentatie.GebruikersGui\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "AutoVerhuurProject.Presentatie.GebruikersGui\\LoginWindow.xaml",
               "ToolTip": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Presentatie.GebruikersGui\\LoginWindow.xaml",
               "RelativeToolTip": "AutoVerhuurProject.Presentatie.GebruikersGui\\LoginWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-27T10:14:47.368Z",
+              "WhenOpened": "2025-03-27T14:39:39.561Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReservatieAanmakenWindow.xaml",
+              "DocumentMoniker": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Presentatie.GebruikersGui\\ReservatieAanmakenWindow.xaml",
+              "RelativeDocumentMoniker": "AutoVerhuurProject.Presentatie.GebruikersGui\\ReservatieAanmakenWindow.xaml",
+              "ToolTip": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Presentatie.GebruikersGui\\ReservatieAanmakenWindow.xaml",
+              "RelativeToolTip": "AutoVerhuurProject.Presentatie.GebruikersGui\\ReservatieAanmakenWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-27T13:31:29.03Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Presentatie.GebruikersGui\\LoginWindow.xaml.cs",
-              "RelativeDocumentMoniker": "AutoVerhuurProject.Presentatie.GebruikersGui\\LoginWindow.xaml.cs",
-              "ToolTip": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Presentatie.GebruikersGui\\LoginWindow.xaml.cs",
-              "RelativeToolTip": "AutoVerhuurProject.Presentatie.GebruikersGui\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAIwB0AAAAnAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ReservatieAanmakenWindow.xaml.cs",
+              "DocumentMoniker": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Presentatie.GebruikersGui\\ReservatieAanmakenWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AutoVerhuurProject.Presentatie.GebruikersGui\\ReservatieAanmakenWindow.xaml.cs",
+              "ToolTip": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Presentatie.GebruikersGui\\ReservatieAanmakenWindow.xaml.cs",
+              "RelativeToolTip": "AutoVerhuurProject.Presentatie.GebruikersGui\\ReservatieAanmakenWindow.xaml.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAGIAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T10:14:48.97Z",
+              "WhenOpened": "2025-03-27T13:39:08.501Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -62,6 +90,42 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "KlantRepository.cs",
+              "DocumentMoniker": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Persistentie\\KlantRepository.cs",
+              "RelativeDocumentMoniker": "AutoVerhuurProject.Persistentie\\KlantRepository.cs",
+              "ToolTip": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Persistentie\\KlantRepository.cs",
+              "RelativeToolTip": "AutoVerhuurProject.Persistentie\\KlantRepository.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwEUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T14:54:26.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AutoRepository.cs",
+              "DocumentMoniker": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Persistentie\\AutoRepository.cs",
+              "RelativeDocumentMoniker": "AutoVerhuurProject.Persistentie\\AutoRepository.cs",
+              "ToolTip": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Persistentie\\AutoRepository.cs",
+              "RelativeToolTip": "AutoVerhuurProject.Persistentie\\AutoRepository.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAswFgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T14:53:04.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Presentatie.GebruikersGui\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AutoVerhuurProject.Presentatie.GebruikersGui\\LoginWindow.xaml.cs",
+              "ToolTip": "D:\\School\\Autoverhuur - Beerens David\\AutoVerhuur\\AutoVerhuurProject\\AutoVerhuurProject.Presentatie.GebruikersGui\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "AutoVerhuurProject.Presentatie.GebruikersGui\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T10:14:48.97Z"
             }
           ]
         }

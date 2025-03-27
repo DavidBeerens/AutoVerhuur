@@ -1,5 +1,6 @@
 ﻿using AutoVerhuurProject.Domein.DTOs;
 using AutoVerhuurProject.Domein.Interfaces;
+using AutoVerhuurProject.Domein.Models;
 using Microsoft.Data.SqlClient;
 
 namespace AutoVerhuurProject.Persistentie;
@@ -46,7 +47,46 @@ public class AutoRepository : IAutoRepositoryFull
         return errors;
     }
 
+    public List<AutoDto> GetBeschikbareAutos(string luchthaven, int zitplaatsen) {
+        List<AutoDto> results = new List<AutoDto>();
 
+        using var connection = new SqlConnection(connectionString);
+        connection.Open();
+
+        string query;
+        if (zitplaatsen == 1) {
+            query = "SELECT * FROM Autos " +
+            "WHERE Luchthaven LIKE @Luchthaven;";
+        } else {
+            query = "SELECT * FROM Autos " +
+            "WHERE Luchthaven LIKE @Luchthaven AND Zitplaatsen = @Zitplaatsen;";
+        }
+
+        using var command = new SqlCommand(query, connection);
+        command.Parameters.AddWithValue("@Luchthaven", luchthaven);
+        command.Parameters.AddWithValue("@Zitplaatsen", zitplaatsen);
+
+        using var reader = command.ExecuteReader();
+
+        while (reader.Read()) {
+            var auto = new AutoDto(
+                reader.GetString(0),
+                reader.GetString(1),
+                reader.GetByte(2),
+                reader.GetByte(3) switch {
+                    1 => MotorTypes.Benzine,
+                    2 => MotorTypes.Diesel,
+                    3 => MotorTypes.Hybride,
+                    4 => MotorTypes.Elektrisch
+                },
+                reader.GetString(4)
+            );
+            results.Add(auto);
+        };
+
+
+        return results;
+    }
 
 
     public void Add(AutoDto auto) {

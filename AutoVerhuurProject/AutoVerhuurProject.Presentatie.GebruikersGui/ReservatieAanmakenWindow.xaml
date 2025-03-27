@@ -1,0 +1,65 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoVerhuurProject.Presentatie.GebruikersGui"
+        xmlns:Persistentie="clr-namespace:AutoVerhuurProject.Persistentie;assembly=AutoVerhuurProject.Persistentie" x:Class="AutoVerhuurProject.Presentatie.GebruikersGui.ReservatieAanmakenWindow"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="Reservatie aanmaken" Height="450" Width="790">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="20, 20, 0, 0">
+        <TextBlock Text="Luchthaven"/>
+        <ComboBox x:Name="ComboBoxLuchthavens" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBoxLuchthavens_SelectionChanged"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Margin="320, 20, 0, 0">
+        <StackPanel Orientation="Horizontal">
+        <TextBlock Text="Aantal zitplaatsen"/>
+        <TextBlock x:Name="AantalZitplaatsen" Text="alle" Margin="5, 0, 0, 0"/>
+        </StackPanel>
+        <Slider x:Name="SliderZitplaatsen" HorizontalAlignment="Left" Maximum="6" IsSnapToTickEnabled="True" VerticalAlignment="Top" Width="120" ValueChanged="Slider_ValueChanged"/>
+        </StackPanel>
+        
+        <Button Content="Toon alle auto's" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+
+        <StackPanel Orientation="Horizontal" Margin="550, 20, 0, 0">
+            <StackPanel>
+        <DatePicker x:Name="StartDatum" DisplayDateStart="{x:Static sys:DateTime.Today}" SelectedDateChanged="StartDatum_SelectedDateChanged"/>
+        <ComboBox x:Name="BeginTijd" IsEnabled="False" SelectionChanged="BeginTijd_SelectionChanged"/>
+            </StackPanel>
+            <StackPanel>
+        <DatePicker x:Name="EindDatum" SelectedDateChanged="EindDatum_SelectedDateChanged" IsEnabled="False"/>
+        <ComboBox x:Name="EindTijd" IsEnabled="False" SelectionChanged="EindTijd_SelectionChanged"/>
+            </StackPanel>
+        </StackPanel>
+        
+
+        <TextBlock x:Name="GeenAutosGevonden" HorizontalAlignment="Left" Margin="250,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+
+
+        <StackPanel Orientation="Horizontal" Margin="20, 120, 20, 20" HorizontalAlignment="Center">
+            <TextBlock Text="Nummerplaat" Width="150" FontWeight="Bold"/>
+            <TextBlock Text="Model" Width="150" FontWeight="Bold"/>
+            <TextBlock Text="Zitplaatsen" Width="150" FontWeight="Bold"/>
+            <TextBlock Text="Motortype" Width="150" FontWeight="Bold"/>
+            <TextBlock Text="Luchthaven" Width="150" FontWeight="Bold"/>
+        </StackPanel>
+
+        <ListBox x:Name="LstAutos" Background="#7FC8C8C8" Margin="20,150,20,20" ScrollViewer.HorizontalScrollBarVisibility="Disabled" MouseDoubleClick="LstAutos_MouseDoubleClick">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding nummerplaat}" Width="150" />
+                        <TextBlock Text="{Binding model}" Width="150" />
+                        <TextBlock Text="{Binding zitplaatsen}" Width="150" />
+                        <TextBlock Text="{Binding motortype}" Width="150" />
+                        <TextBlock Text="{Binding luchthaven}" Width="150" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

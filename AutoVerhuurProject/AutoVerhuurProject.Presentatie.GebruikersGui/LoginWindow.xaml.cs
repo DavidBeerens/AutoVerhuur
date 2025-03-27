@@ -21,8 +21,10 @@ public partial class LoginWindow : Window
         UpdateKlantenLijst();
     }
 
-    private void LstKlanten_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+    private void LstKlanten_DoubleClicked(object sender, System.Windows.Input.MouseButtonEventArgs e) {
         //Inloggen
+        ReservatieAanmakenWindow reservatieWnd = new ReservatieAanmakenWindow();
+        reservatieWnd.Show();
     }
 
 
@@ -33,9 +35,8 @@ public partial class LoginWindow : Window
         KlantRepository klantRepo = new KlantRepository();
         List<KlantDto> klanten = new List<KlantDto>();
         klanten = klantRepo.GetByNaam(TxtBoxVoornaam.Text, TxtBoxAchternaam.Text);
-        
-        foreach (var klant in klanten) {
+
+        foreach (var klant in klanten)
             LstKlanten.Items.Add(klant);
-        }
     }
 }

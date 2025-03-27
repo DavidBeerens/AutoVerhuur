@@ -70,13 +70,6 @@ public class KlantRepository
                     reader.GetString(4),
                     reader.GetString(5),
                     reader.GetString(6)
-                //reader.GetString(reader.GetOrdinal("Email")),
-                //reader.GetString(reader.GetOrdinal("Voornaam")),
-                //reader.GetString(reader.GetOrdinal("Achternaam")),
-                //reader.GetString(reader.GetOrdinal("Straat")),
-                //reader.GetString(reader.GetOrdinal("Postcode")),
-                //reader.GetString(reader.GetOrdinal("Woonplaats")),
-                //reader.GetString(reader.GetOrdinal("Land"))
                 );
 
                 results.Add(Klant);

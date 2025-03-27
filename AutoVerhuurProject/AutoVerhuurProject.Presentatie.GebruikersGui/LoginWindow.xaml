@@ -34,10 +34,7 @@
         </StackPanel>
 
 
-        <ListBox x:Name="LstKlanten" Background="#7FC8C8C8" Margin="20,100,20,20" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="LstKlanten_SelectionChanged">
-            <ListBox.DataContext>
-                <Persistentie:KlantRepository/>
-            </ListBox.DataContext>
+        <ListBox x:Name="LstKlanten" Background="#7FC8C8C8" Margin="20,100,20,20" ScrollViewer.HorizontalScrollBarVisibility="Disabled" MouseDoubleClick="LstKlanten_DoubleClicked">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
