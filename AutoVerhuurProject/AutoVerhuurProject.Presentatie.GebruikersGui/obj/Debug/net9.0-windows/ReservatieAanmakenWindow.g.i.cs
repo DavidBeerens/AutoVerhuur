@@ -135,8 +135,8 @@ namespace AutoVerhuurProject.Presentatie.GebruikersGui {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/AutoVerhuurProject.Presentatie.GebruikersGui;V1.0.0.0;component/reservatieaanmak" +
-                    "enwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/AutoVerhuurProject.Presentatie.GebruikersGui;component/reservatieaanmakenwindow." +
+                    "xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ReservatieAanmakenWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

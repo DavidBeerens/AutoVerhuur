@@ -17,7 +17,7 @@
             <ComboBox x:Name="ComboBoxLuchthavens" SelectionChanged="SelectionChanged"/>
         </StackPanel>
 
-        <Button Content="Maak asciidoc" HorizontalAlignment="Left" Margin="591,55,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BtnMaakAscii" Content="Maak asciidoc" HorizontalAlignment="Left" Margin="562,57,0,0" VerticalAlignment="Top" Click="BtnMaakAscii_Click"/>
 
 
         <ListBox x:Name="LstBeschikbareAutos" Background="#7FC8C8C8" Margin="20,100,20,20" ScrollViewer.HorizontalScrollBarVisibility="Disabled">

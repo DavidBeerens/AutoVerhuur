@@ -182,7 +182,7 @@ public partial class GegevensApp : Window
 
 
         if (MessageBox.Show("Er zijn errors gevonden.\nWil je het error bestand openen?", "Error bestand aangemaakt",
-    MessageBoxButton.YesNo, MessageBoxImage.Error) == MessageBoxResult.Yes) {
+            MessageBoxButton.YesNo, MessageBoxImage.Error) == MessageBoxResult.Yes) {
             // Bestand openen met default programma
             Process.Start(new ProcessStartInfo {
                 FileName = "errors.csv",

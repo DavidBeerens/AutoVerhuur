@@ -1,0 +1,386 @@
+= Overzicht auto's
+
+Vestiging: Malpensa
+
+Datum: Saturday, 15 March 2025
+
+.BE-LIG-690 - Tesla Model 3
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.BE-LJQ-650 - Renault Clio
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.DK-HTF-133 - Renault Clio
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.DK-JBZ-117 - Renault Clio
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.DK-LZG-550 - Audi A4
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.ES-BLS-168 - Skoda Octavia
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.ES-LRL-071 - Volkswagen Golf
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.FI-ZHK-509 - Peugeot 208
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.FR-SCR-958 - BMW X5
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.IT-DWQ-696 - Fiat 500
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.IT-PZS-161 - Tesla Model 3
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.IT-ZGV-294 - Renault Clio
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.NL-ZIW-390 - Volvo XC60
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.PT-GNO-564 - Mercedes-Benz E-Class
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.PT-KGX-931 - Volkswagen Golf
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.PT-UHA-886 - Mercedes-Benz E-Class
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.SE-GRJ-600 - Ford Fiesta
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.SE-QIF-053 - BMW X5
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.SE-RSF-535 - Fiat 500
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.SE-YKW-418 - Seat Leon
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
