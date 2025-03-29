@@ -14,7 +14,7 @@
         <ComboBox x:Name="ComboBoxLuchthavens" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBoxLuchthavens_SelectionChanged"/>
         </StackPanel>
 
-        <StackPanel Orientation="Vertical" Margin="320, 20, 0, 0">
+        <StackPanel Orientation="Vertical" Margin="185, 20, 0, 0">
         <StackPanel Orientation="Horizontal">
         <TextBlock Text="Aantal zitplaatsen"/>
         <TextBlock x:Name="AantalZitplaatsen" Text="alle" Margin="5, 0, 0, 0"/>
@@ -25,7 +25,7 @@
         <Button Content="Toon alle auto's" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top" Click="Button_Click"/>
 
 
-        <StackPanel Orientation="Horizontal" Margin="550, 20, 0, 0">
+        <StackPanel Orientation="Horizontal" Margin="360, 20, 0, 0">
             <StackPanel>
         <DatePicker x:Name="StartDatum" DisplayDateStart="{x:Static sys:DateTime.Today}" SelectedDateChanged="StartDatum_SelectedDateChanged"/>
         <ComboBox x:Name="BeginTijd" IsEnabled="False" SelectionChanged="BeginTijd_SelectionChanged"/>
@@ -35,7 +35,12 @@
         <ComboBox x:Name="EindTijd" IsEnabled="False" SelectionChanged="EindTijd_SelectionChanged"/>
             </StackPanel>
         </StackPanel>
-        
+
+        <StackPanel Orientation="Vertical" Margin="610, 20, 0, 0">
+            <TextBlock Text="Retourneren op luchthaven"/>
+            <ComboBox x:Name="ComboBoxRetour" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+        </StackPanel>
+
 
         <TextBlock x:Name="GeenAutosGevonden" HorizontalAlignment="Left" Margin="250,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
 

@@ -136,3 +136,5 @@ D:\School\Autoverhuur - Beerens David\AutoVerhuur\AutoVerhuurProject\AutoVerhuur
 D:\School\Autoverhuur - Beerens David\AutoVerhuur\AutoVerhuurProject\AutoVerhuurProject.Presentatie.GebruikersGui\obj\Debug\net9.0-windows\ref\AutoVerhuurProject.Presentatie.GebruikersGui.dll
 D:\School\Autoverhuur - Beerens David\AutoVerhuur\AutoVerhuurProject\AutoVerhuurProject.Presentatie.GebruikersGui\obj\Debug\net9.0-windows\ReservatieAanmakenWindow.g.cs
 D:\School\Autoverhuur - Beerens David\AutoVerhuur\AutoVerhuurProject\AutoVerhuurProject.Presentatie.GebruikersGui\obj\Debug\net9.0-windows\ReservatieAanmakenWindow.baml
+D:\School\Autoverhuur - Beerens David\AutoVerhuur\AutoVerhuurProject\AutoVerhuurProject.Presentatie.GebruikersGui\obj\Debug\net9.0-windows\OverzichtWindow.g.cs
+D:\School\Autoverhuur - Beerens David\AutoVerhuur\AutoVerhuurProject\AutoVerhuurProject.Presentatie.GebruikersGui\obj\Debug\net9.0-windows\OverzichtWindow.baml

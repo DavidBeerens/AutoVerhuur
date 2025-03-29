@@ -28,12 +28,19 @@ namespace AutoVerhuurProject.Presentatie.GebruikersGui
         private DateTime beginDatum = new DateTime();
         private DateTime eindDatum = new DateTime();
 
-        public ReservatieAanmakenWindow() {
+        private KlantDto klant;
+
+        public ReservatieAanmakenWindow(KlantDto ingelogdeKlant) {
             InitializeComponent();
+
+            klant = ingelogdeKlant;
+
             VestigingRepository vestigingRepo = new VestigingRepository();
             List<string> luchthavens = vestigingRepo.GetLuchthavens();
-            foreach (string v in luchthavens)
+            foreach (string v in luchthavens) {
                 ComboBoxLuchthavens.Items.Add(v);
+                ComboBoxRetour.Items.Add(v);
+            }
 
             ToonAutoLijst("%", 0);
 
@@ -75,14 +82,22 @@ namespace AutoVerhuurProject.Presentatie.GebruikersGui
         private void Button_Click(object sender, RoutedEventArgs e) {
             ComboBoxLuchthavens.SelectedIndex = -1;
             SliderZitplaatsen.Value = 0;
+            StartDatum.SelectedDate = DateTime.Today;
+            EindDatum.SelectedDate = new DateTime();
+            BeginTijd.SelectedIndex = -1;
+            EindTijd.SelectedIndex = -1;
         }
 
         private void BeginTijd_SelectionChanged(object sender, SelectionChangedEventArgs e) {
-            beginTijd = new TimeOnly(BeginTijd.SelectedIndex, 0, 0);
+            beginTijd = new TimeOnly((BeginTijd.SelectedIndex == -1) ? 0 : BeginTijd.SelectedIndex, 0, 0);
             UpdateDatums();
         }
         private void EindTijd_SelectionChanged(object sender, SelectionChangedEventArgs e) {
-            eindTijd = new TimeOnly(EindTijd.SelectedIndex + 1, 0, 0);
+            if (EindTijd.SelectedIndex != 23)
+                eindTijd = new TimeOnly((EindTijd.SelectedIndex == -1) ? 0 : EindTijd.SelectedIndex + 1, 0, 0);
+            else //zet de tijd op 00:00:0 er zal een dag aan de einddatum worden toegevoegd in UpdateDatums
+                eindTijd = new TimeOnly(0, 0, 0);
+
             UpdateDatums();
         }
 
@@ -92,7 +107,7 @@ namespace AutoVerhuurProject.Presentatie.GebruikersGui
 
             AutoRepository autoRepo = new AutoRepository();
             List<AutoDto> autos = new List<AutoDto>();
-            autos = autoRepo.GetBeschikbareAutos(luchthaven, zitplaatsen + 1);
+            autos = autoRepo.GetBeschikbareAutos(luchthaven, zitplaatsen + 1, beginDatum, eindDatum);
 
 
             if (autos.Count() == 0)
@@ -112,6 +127,9 @@ namespace AutoVerhuurProject.Presentatie.GebruikersGui
             beginDatum = StartDatum.SelectedDate.Value.Date + beginTijd.ToTimeSpan();
             if (EindDatum.SelectedDate.HasValue)
                 eindDatum = EindDatum.SelectedDate.Value.Date + eindTijd.ToTimeSpan();
+
+            if (eindTijd == new TimeOnly(0, 0, 0)) //dag toevoegen aan eindtijd aangezien er wordt teruggebracht tussen 23:00 en 00:00
+                eindDatum = eindDatum.AddDays(1);
 
 
             //begingrens van einddatum instellen
@@ -141,14 +159,38 @@ namespace AutoVerhuurProject.Presentatie.GebruikersGui
             }
 
 
-
+            ToonAutoLijst((ComboBoxLuchthavens.SelectedValue == null ? "%" : ComboBoxLuchthavens.SelectedValue.ToString()), (int)SliderZitplaatsen.Value);
         }
 
         private void LstAutos_MouseDoubleClick(object sender, MouseButtonEventArgs e) {
-            if ((eindDatum - beginDatum).TotalHours < 24) {
-                MessageBox.Show("Reservatie moet minstens 24 uur zijn.");
-            } else {
+            //controleren of er op een item werd geklikt
+            var listBox = sender as ListBox;
+            var positieGeklikt = e.GetPosition(listBox);
+            var element = listBox.InputHitTest(positieGeklikt) as FrameworkElement;
+            if (element != null) {
+                var listBoxItem = ItemsControl.ContainerFromElement(listBox, element) as ListBoxItem;
 
+                if (listBoxItem != null) {
+
+
+
+
+
+                    //Reservatie aanmaken
+                    if (BeginTijd.SelectedIndex == -1 || EindTijd.SelectedIndex == -1)
+                        MessageBox.Show("Selecteer een begin- en eindtijdstip.");
+                    else if ((eindDatum - beginDatum).TotalHours < 24)
+                        MessageBox.Show("Reservatie moet minstens 24 uur zijn.");
+                    else if (ComboBoxRetour.SelectedIndex == -1)
+                        MessageBox.Show("Selecteer een retourluchthaven.");
+                    else {
+                        //reservatie toevoegen
+
+                        var reservatieRepo = new ReserveringRepository();
+                        if (reservatieRepo.VoegReservatieToe(klant, (AutoDto)LstAutos.SelectedItem, ComboBoxRetour.SelectedItem.ToString(), beginDatum, eindDatum))
+                            LstAutos.Items.Remove(LstAutos.SelectedItem);
+                    }
+                }
             }
         }
     }

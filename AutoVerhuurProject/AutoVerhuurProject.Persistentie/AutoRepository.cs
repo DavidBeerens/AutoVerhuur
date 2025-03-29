@@ -47,24 +47,36 @@ public class AutoRepository : IAutoRepositoryFull
         return errors;
     }
 
-    public List<AutoDto> GetBeschikbareAutos(string luchthaven, int zitplaatsen) {
+    public List<AutoDto> GetBeschikbareAutos(string luchthaven, int zitplaatsen, DateTime start, DateTime einde) {
         List<AutoDto> results = new List<AutoDto>();
 
         using var connection = new SqlConnection(connectionString);
         connection.Open();
 
-        string query;
-        if (zitplaatsen == 1) {
-            query = "SELECT * FROM Autos " +
-            "WHERE Luchthaven LIKE @Luchthaven;";
-        } else {
-            query = "SELECT * FROM Autos " +
-            "WHERE Luchthaven LIKE @Luchthaven AND Zitplaatsen = @Zitplaatsen;";
-        }
+
+        string query = (zitplaatsen == 1)
+        ? "SELECT a.* FROM Autos a " +
+            "WHERE a.Luchthaven LIKE @Luchthaven " +
+            "AND a.Nummerplaat NOT IN (" +
+                "SELECT r.AutoNummerplaat " +
+                "FROM Reservaties r " +
+                "WHERE r.StartTijdStip < @EindTijd AND r.EindTijdStip > @StartTijd " +
+            ");"
+        : "SELECT a.* FROM Autos a " +
+            "WHERE a.Luchthaven LIKE @Luchthaven AND a.Zitplaatsen = @Zitplaatsen " +
+            "AND a.Nummerplaat NOT IN (" +
+                "SELECT r.AutoNummerplaat " +
+                "FROM Reservaties r " +
+                "WHERE r.StartTijdStip < @EindTijd AND r.EindTijdStip > @StartTijd " +
+            ");";
 
         using var command = new SqlCommand(query, connection);
         command.Parameters.AddWithValue("@Luchthaven", luchthaven);
         command.Parameters.AddWithValue("@Zitplaatsen", zitplaatsen);
+
+        //minimum en maximum datum meegeven als er niks is ingevuld
+        command.Parameters.AddWithValue("@StartTijd",(start <= new DateTime(1753, 1, 1) ? new DateTime(9999, 12, 31, 11, 59, 58) : start));
+        command.Parameters.AddWithValue("@EindTijd", (einde <= new DateTime(1753, 1, 1) ? new DateTime(9999, 12, 31, 11, 59, 59) : einde));
 
         using var reader = command.ExecuteReader();
 

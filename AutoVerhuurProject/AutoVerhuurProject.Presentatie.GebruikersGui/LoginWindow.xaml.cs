@@ -11,6 +11,8 @@ namespace AutoVerhuurProject.Presentatie.GebruikersGui;
 /// </summary>
 public partial class LoginWindow : Window
 {
+    public KlantDto klant;
+
     public LoginWindow() {
         InitializeComponent();
         UpdateKlantenLijst();
@@ -22,11 +24,25 @@ public partial class LoginWindow : Window
     }
 
     private void LstKlanten_DoubleClicked(object sender, System.Windows.Input.MouseButtonEventArgs e) {
-        //Inloggen
-        ReservatieAanmakenWindow reservatieWnd = new ReservatieAanmakenWindow();
-        reservatieWnd.Show();
-    }
+        //controleren of er op een item werd geklikt
+        var listBox = sender as ListBox;
+        var positieGeklikt = e.GetPosition(listBox);
+        var element = listBox.InputHitTest(positieGeklikt) as FrameworkElement;
+        if (element != null) {
+            var listBoxItem = ItemsControl.ContainerFromElement(listBox, element) as ListBoxItem;
 
+            if (listBoxItem != null) {
+
+
+
+
+
+                //Inloggen
+                ReservatieAanmakenWindow reservatieWnd = new ReservatieAanmakenWindow((KlantDto)LstKlanten.SelectedItem);
+                reservatieWnd.Show();
+            }
+        }
+    }
 
 
     private void UpdateKlantenLijst() {
@@ -38,5 +54,11 @@ public partial class LoginWindow : Window
 
         foreach (var klant in klanten)
             LstKlanten.Items.Add(klant);
+    }
+
+    private void BtnOverzicht_Click(object sender, RoutedEventArgs e) {
+        //Venster met overzichten openen
+        OverzichtWindow overzichtWnd = new OverzichtWindow();
+        overzichtWnd.Show();
     }
 }

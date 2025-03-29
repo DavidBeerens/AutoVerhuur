@@ -21,6 +21,9 @@
         </StackPanel>
 
 
+        <StackPanel Margin="500, 20, 0, 0" HorizontalAlignment="Left">
+            <Button x:Name="BtnOverzicht" Content="Overzicht beschikbare auto's" Width="200" Height="30" Click="BtnOverzicht_Click"/>
+        </StackPanel>
 
 
         <StackPanel Orientation="Horizontal" Margin="20, 80" HorizontalAlignment="Center">

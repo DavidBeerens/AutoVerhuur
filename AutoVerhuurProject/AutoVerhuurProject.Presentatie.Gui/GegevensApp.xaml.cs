@@ -52,15 +52,19 @@ public partial class GegevensApp : Window
     private void BtnInvoeren_Click(object sender, RoutedEventArgs e) {
         geselecteerdBestand = TextBoxPad.Text;
 
-        try {
-            if (RadioAutos.IsChecked == true)
-                AutosInvoeren();
-            else if (RadioKlanten.IsChecked == true)
-                KlantenInvoeren();
-            else if (RadioVestigingen.IsChecked == true)
-                VestigingenInvoeren();
-        } catch {
-            MessageBox.Show("Onverwachte fout.");
+        if (geselecteerdBestand.EndsWith(".csv", StringComparison.OrdinalIgnoreCase)) {
+            try {
+                if (RadioAutos.IsChecked == true)
+                    AutosInvoeren();
+                else if (RadioKlanten.IsChecked == true)
+                    KlantenInvoeren();
+                else if (RadioVestigingen.IsChecked == true)
+                    VestigingenInvoeren();
+            } catch {
+                MessageBox.Show("Onverwachte fout.");
+            }
+        } else {
+            MessageBox.Show("Geen CSV bestand!");
         }
     }
 
