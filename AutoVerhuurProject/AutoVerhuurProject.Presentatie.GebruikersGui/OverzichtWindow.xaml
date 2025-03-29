@@ -8,13 +8,13 @@
         Title="Overzicht beschikbare auto's" Height="450" Width="800">
     <Grid>
         <StackPanel Margin="20, 20, 650, 300">
-            <DatePicker x:Name="Datum"/>
-            <ComboBox x:Name="Tijd"/>
+            <DatePicker x:Name="Datum" SelectedDateChanged="SelectionChanged"/>
+            <ComboBox x:Name="Tijd" SelectionChanged="SelectionChanged"/>
         </StackPanel>
         
         
         <StackPanel Margin="200, 20, 450, 0">
-            <ComboBox x:Name="ComboBoxLuchthavens"/>
+            <ComboBox x:Name="ComboBoxLuchthavens" SelectionChanged="SelectionChanged"/>
         </StackPanel>
 
         <Button Content="Maak asciidoc" HorizontalAlignment="Left" Margin="591,55,0,0" VerticalAlignment="Top"/>

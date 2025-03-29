@@ -47,6 +47,51 @@ public class AutoRepository : IAutoRepositoryFull
         return errors;
     }
 
+    //om te controleren welke auto's beschikbaar zijn op 1 bepaald moment voor het overzicht
+    public List<AutoDto> GetBeschikbareAutos(string luchthaven, DateTime tijdstip) {
+        List<AutoDto> results = new List<AutoDto>();
+
+        using var connection = new SqlConnection(connectionString);
+        connection.Open();
+
+
+        string query = "SELECT * FROM Autos a " +
+            "WHERE a.Luchthaven = @Luchthaven AND " +
+            "a.Nummerplaat NOT IN ( " +
+            "SELECT r.AutoNummerplaat " +
+            "FROM Reservaties r " +
+            "WHERE @Tijdstip BETWEEN r.StartTijdStip AND r.EindTijdStip);";
+
+
+        using var command = new SqlCommand(query, connection);
+        command.Parameters.AddWithValue("@Luchthaven", luchthaven);
+        command.Parameters.AddWithValue("@Tijdstip", tijdstip);
+
+        
+        using var reader = command.ExecuteReader();
+
+        while (reader.Read()) {
+            var auto = new AutoDto(
+                reader.GetString(0),
+                reader.GetString(1),
+                reader.GetByte(2),
+                reader.GetByte(3) switch {
+                    1 => MotorTypes.Benzine,
+                    2 => MotorTypes.Diesel,
+                    3 => MotorTypes.Hybride,
+                    4 => MotorTypes.Elektrisch
+                },
+                reader.GetString(4)
+            );
+            results.Add(auto);
+        };
+
+
+        return results;
+    }
+
+
+
     public List<AutoDto> GetBeschikbareAutos(string luchthaven, int zitplaatsen, DateTime start, DateTime einde) {
         List<AutoDto> results = new List<AutoDto>();
 

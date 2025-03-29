@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoVerhuurProject.Domein.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e063d7ba47512fdf640ae3688f8c752aa895036")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14ea6d7bf5d44ae791f0774c470868f8580149f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoVerhuurProject.Domein.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoVerhuurProject.Domein.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
