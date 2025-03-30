@@ -19,6 +19,10 @@ public partial class GegevensApp : Window
 {
     public GegevensApp() {
         InitializeComponent();
+
+        //database leegmaken
+        StartupRepository startupRepo = new StartupRepository();
+        startupRepo.EmptyDB();
     }
 
 

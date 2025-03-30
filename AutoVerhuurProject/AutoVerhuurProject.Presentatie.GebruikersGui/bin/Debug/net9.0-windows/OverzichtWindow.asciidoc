@@ -384,3 +384,532 @@ Eindtijd: {eindTijd}
 |===
 
 
+= Overzicht auto's
+
+Vestiging: Kastrup
+
+Datum: Thursday, 13 March 2025
+
+.DE-WQD-723 - Volvo V60
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+= Overzicht auto's
+
+Vestiging: Schiphol
+
+Datum: Saturday, 28 December 2024
+
+.DK-MJY-396 - Tesla Model 3
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.DK-SCT-733 - Seat Leon
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.ES-EDZ-148 - Ford Fiesta
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.FI-EGU-845 - Fiat 500
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.FI-EJU-599 - Volkswagen Golf
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.FI-SUO-178 - Audi A4
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.FI-WXO-949 - Renault Clio
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.FR-FZT-196 - BMW X5
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.FR-VBG-818 - Peugeot 208
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.NL-GBB-223 - Volvo XC60
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.NL-RXR-088 - BMW X5
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.PT-AUP-146 - Volvo V60
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.PT-KCF-915 - Ford Fiesta
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.sdfe - sef
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.SE-AGO-183 - BMW X5
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.SE-JUE-805 - Volvo XC60
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+.SE-ZJI-699 - Ford Fiesta
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+= Overzicht auto's
+
+Vestiging: Zaventem
+
+Datum: Wednesday, 12 March 2025
+
+.BE-IAY-253 - Fiat 500
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+= Overzicht auto's
+
+Vestiging: Malpensa
+
+Datum: Thursday, 6 March 2025
+
+.BE-LIG-690 - Tesla Model 3
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+= Overzicht auto's
+
+Vestiging: Malpensa
+
+Datum: Friday, 14 March 2025
+
+.BE-LIG-690 - Tesla Model 3
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+= Overzicht auto's
+
+Vestiging: Barajas
+
+Datum: Friday, 28 February 2025
+
+.BE-RPL-692 - Peugeot 208
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+= Overzicht auto's
+
+Vestiging: Malpensa
+
+Datum: Wednesday, 26 March 2025
+
+.BE-LIG-690 - Tesla Model 3
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+= Overzicht auto's
+
+Vestiging: Malpensa
+
+Datum: Thursday, 6 March 2025
+
+.BE-LIG-690 - Tesla Model 3
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+
+= Overzicht auto's
+
+Vestiging: El Prat
+
+Datum: Sunday, 30 March 2025
+
+.BE-GDS-480 - Nissan Leaf
+[%autowidth]
+|===
+|vorige reservatie |volgende reservatie
+
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+|Klant: {naam} {voornaam} +
+{adresregel1} +
+{adresregel2}
+
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|Starttijd: {startTijd} +
+Eindtijd: {eindTijd}
+|===
+
+

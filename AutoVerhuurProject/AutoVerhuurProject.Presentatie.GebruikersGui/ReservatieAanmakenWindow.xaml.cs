@@ -193,5 +193,9 @@ namespace AutoVerhuurProject.Presentatie.GebruikersGui
                 }
             }
         }
+
+        private void BtnTerug_Click(object sender, RoutedEventArgs e) {
+            Close();
+        }
     }
 }
