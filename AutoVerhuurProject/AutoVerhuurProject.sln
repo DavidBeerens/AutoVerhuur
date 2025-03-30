@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoVerhuurProject.Persiste
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoVerhuurProject.Domein.Tests", "AutoVerhuurProject.Domein.Tests\AutoVerhuurProject.Domein.Tests.csproj", "{BF241BDB-97E4-41F9-85E8-E1EFC153E3E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoVerhuurProject.Presentatie.GegevensGui", "AutoVerhuurProject.Presentatie.Gui\AutoVerhuurProject.Presentatie.GegevensGui.csproj", "{3C0EA644-3798-4A83-B662-15F766F25032}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoVerhuurProject.Presentatie.GegevensGui", "AutoVerhuurProject.Presentatie.GegevensGui\AutoVerhuurProject.Presentatie.GegevensGui.csproj", "{3C0EA644-3798-4A83-B662-15F766F25032}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoVerhuurProject.Presentatie.GebruikersGui", "AutoVerhuurProject.Presentatie.GebruikersGui\AutoVerhuurProject.Presentatie.GebruikersGui.csproj", "{19D3A6FC-909D-46C9-AA41-1B296B164132}"
 EndProject
