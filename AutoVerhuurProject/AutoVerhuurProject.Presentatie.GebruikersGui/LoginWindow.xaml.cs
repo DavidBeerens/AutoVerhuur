@@ -16,6 +16,8 @@ public partial class LoginWindow : Window
     public LoginWindow() {
         InitializeComponent();
         UpdateKlantenLijst();
+        AutoRepository autoRepo = new AutoRepository();
+        autoRepo.VeranderLuchthaven();
     }
 
     private void TextBox_TextChanged(object sender, TextChangedEventArgs e) {

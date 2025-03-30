@@ -145,6 +145,31 @@ public class AutoRepository : IAutoRepositoryFull
         return results;
     }
 
+    public void VeranderLuchthaven() {
+        using var connection = new SqlConnection(connectionString);
+        connection.Open();
+
+
+        string query = "UPDATE a " +
+            "SET a.Luchthaven = r.RetourLuchthaven " +
+            "FROM Autos a " +
+            "JOIN ( " +
+                "SELECT r1.AutoNummerplaat, r1.RetourLuchthaven " +
+                "FROM Reservaties r1 " +
+                "WHERE r1.EindTijdStip = ( " +
+                    "SELECT MAX(r2.EindTijdStip) " +
+                    "FROM Reservaties r2 " +
+                    "WHERE r2.AutoNummerplaat = r1.AutoNummerplaat " +
+                    "AND r2.EindTijdStip < CURRENT_TIMESTAMP " +
+                ") " +
+            ") AS r ON a.Nummerplaat = r.AutoNummerplaat " +
+            "WHERE a.Luchthaven <> r.RetourLuchthaven;";
+
+
+        using var command = new SqlCommand(query, connection);
+        command.ExecuteNonQuery();
+    }
+
 
     public void Add(AutoDto auto) {
         throw new NotImplementedException();
