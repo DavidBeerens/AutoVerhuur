@@ -33,10 +33,6 @@ public partial class LoginWindow : Window
 
             if (listBoxItem != null) {
 
-
-
-
-
                 //Inloggen
                 ReservatieAanmakenWindow reservatieWnd = new ReservatieAanmakenWindow((KlantDto)LstKlanten.SelectedItem);
                 reservatieWnd.Show();
@@ -56,9 +52,15 @@ public partial class LoginWindow : Window
             LstKlanten.Items.Add(klant);
     }
 
-    private void BtnOverzicht_Click(object sender, RoutedEventArgs e) {
-        //Venster met overzichten openen
-        OverzichtWindow overzichtWnd = new OverzichtWindow();
-        overzichtWnd.Show();
+    private void BtnAutoOverzicht_Click(object sender, RoutedEventArgs e) {
+        //Venster met auto overzichten openen
+        OverzichtWindow autoWnd = new OverzichtWindow();
+        autoWnd.Show();
+    }
+
+    private void BtnReservatieOverzicht_Click(object sender, RoutedEventArgs e) {
+        //Venster met reservatie overzichten openen
+        ReservatieOverzichtWindow resWnd = new ReservatieOverzichtWindow();
+        resWnd.Show();
     }
 }

@@ -21,8 +21,12 @@
         </StackPanel>
 
 
-        <StackPanel Margin="500, 20, 0, 0" HorizontalAlignment="Left">
-            <Button x:Name="BtnOverzicht" Content="Overzicht beschikbare auto's" Width="200" Height="30" Click="BtnOverzicht_Click"/>
+        <StackPanel Margin="400, 20, 0, 0" HorizontalAlignment="Left">
+            <Button x:Name="BtnAutoOverzicht" Content="Overzicht beschikbare auto's" Width="200" Height="30" Click="BtnAutoOverzicht_Click"/>
+        </StackPanel>
+
+        <StackPanel Margin="650, 20, 0, 0" HorizontalAlignment="Left">
+            <Button x:Name="BtnReservatieOverzicht" Content="Overzicht Reserveringen" Width="200" Height="30" Click="BtnReservatieOverzicht_Click"/>
         </StackPanel>
 
 

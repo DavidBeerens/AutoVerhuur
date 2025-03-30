@@ -1,4 +1,5 @@
 ﻿using AutoVerhuurProject.Domein.DTOs;
+using AutoVerhuurProject.Domein.Models;
 using Microsoft.Data.SqlClient;
 using System.Reflection.Metadata.Ecma335;
 using System.Text.Json;
@@ -119,5 +120,87 @@ public class ReserveringRepository
 
 
         return (reservatie, klant);
+    }
+
+
+
+    public List<(ReservatieDto, AutoDto, KlantDto)> GetResevaties(string voornaam, string achternaam, DateTime? datum, string vestiging) {
+        List<(ReservatieDto, AutoDto, KlantDto)> results = new List<(ReservatieDto, AutoDto, KlantDto)> ();
+
+        using var connection = new SqlConnection(connectionString);
+        connection.Open();
+
+        string query = (datum == null)
+            ? "SELECT * FROM Reservaties r " +
+                "JOIN Autos a ON r.AutoNummerplaat = a.Nummerplaat " +
+                "JOIN Klanten k ON r.KlantEmail = k.Email " +
+                "WHERE k.Voornaam LIKE @Voornaam AND k.Achternaam LIKE @Achternaam " +
+                "AND a.Luchthaven LIKE @Luchthaven;"
+            : "SELECT * FROM Reservaties r " +
+                "JOIN Autos a ON r.AutoNummerplaat = a.Nummerplaat " +
+                "JOIN Klanten k ON r.KlantEmail = k.Email " +
+                "WHERE k.Voornaam LIKE @Voornaam AND k.Achternaam LIKE @Achternaam " +
+                "AND a.Luchthaven LIKE @Luchthaven " +
+                "AND r.StartTijdStip <= @Datum AND r.EindTijdStip > @Datum;";
+      
+
+        using var command = new SqlCommand(query, connection);
+        command.Parameters.AddWithValue("@Voornaam", voornaam + "%");
+        command.Parameters.AddWithValue("@Achternaam", achternaam + "%");
+        command.Parameters.AddWithValue("@Luchthaven", vestiging);
+        if (datum != null)
+            command.Parameters.AddWithValue("@Datum", datum);
+
+        using var reader = command.ExecuteReader();
+        while (reader.Read()) {
+            var reservatie = new ReservatieDto(
+                new Guid((byte[])reader[0]),
+                reader.GetString(1),
+                reader.GetString(2),
+                reader.GetString(3),
+                reader.GetDateTime(4),
+                reader.GetDateTime(5));
+
+            var auto = new AutoDto(
+                reader.GetString(6),
+                reader.GetString(7),
+                reader.GetByte(8),
+                reader.GetByte(9) switch {
+                    1 => MotorTypes.Benzine,
+                    2 => MotorTypes.Diesel,
+                    3 => MotorTypes.Hybride,
+                    4 => MotorTypes.Elektrisch
+                },
+                reader.GetString(10)
+            );
+
+            var klant = new KlantDto(
+                reader.GetString(11),
+                reader.GetString(12),
+                reader.GetString(13),
+                reader.GetString(14),
+                reader.GetString(15),
+                reader.GetString(16),
+                reader.GetString(17)
+            );
+
+            results.Add((reservatie, auto, klant));
+        }
+
+        return results;
+    }
+
+
+    public void DeleteById(Guid id) {
+        using (SqlConnection connection = new(connectionString)) {
+            connection.Open();
+
+            string query = "DELETE FROM Reservaties WHERE ReserveringsId = @ReserveringsId;";
+
+            using (SqlCommand command = new SqlCommand(query, connection)) {
+                command.Parameters.AddWithValue("@ReserveringsId", id);
+                command.ExecuteNonQuery();
+            }
+        }
     }
 }

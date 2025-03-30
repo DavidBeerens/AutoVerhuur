@@ -103,15 +103,15 @@ namespace AutoVerhuurProject.Presentatie.GebruikersGui
 
 
                             if (heeftVorige) {
-                                writer.WriteLine($"|Starttijd: {resVorige.Item1.startTijdStip} +");
-                                writer.WriteLine($"Eindtijd: {resVorige.Item1.eindTijstip}");
+                                writer.WriteLine($"|Starttijd: {resVorige.Item1.startTijdstip} +");
+                                writer.WriteLine($"Eindtijd: {resVorige.Item1.eindTijdstip}");
                             } else {
                                 writer.WriteLine("|\n");
                             }
 
                             if (heeftVolgende) {
-                                writer.WriteLine($"|Starttijd: {resVolgende.Item1.startTijdStip} +");
-                                writer.WriteLine($"Eindtijd: {resVolgende.Item1.eindTijstip}");
+                                writer.WriteLine($"|Starttijd: {resVolgende.Item1.startTijdstip} +");
+                                writer.WriteLine($"Eindtijd: {resVolgende.Item1.eindTijdstip}");
                             }
                             
                             writer.WriteLine("|===\n\n");
