@@ -9,10 +9,6 @@ internal class VestigingReader
     public List<string> errors = new List<string>();
 
     public List<(Vestiging, int)> ReadCsv(string bestandpad) {
-        if (!File.Exists(bestandpad))
-            throw new FileNotFoundException(bestandpad, "niet gevonden");
-
-
         List<string[]> data = new List<string[]>();
 
         try {

@@ -9,10 +9,6 @@ internal class AutoReader
     public List<string> errors = new List<string>();
 
     public List<(Auto, int)> ReadCsv(string bestandpad, List<string> luchthavens) {
-        if (!File.Exists(bestandpad))
-            throw new FileNotFoundException(bestandpad, "niet gevonden");
-
-
         List<string[]> data = new List<string[]>();
 
         try {
@@ -57,7 +53,7 @@ internal class AutoReader
                 }
             }
         } catch (Exception ex) {
-            errors.Add("Fout bij inlezen van bestand." +  ex.Message);
+            errors.Add("Fout bij inlezen van bestand. " +  ex.Message);
         }
 
 

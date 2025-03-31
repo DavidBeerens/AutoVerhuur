@@ -8,11 +8,6 @@ internal class KlantReader
     public List<string> errors = new List<string>();
 
     public List<(Klant, int)> ReadCsv(string bestandpad) {
-        if (!File.Exists(bestandpad))
-            throw new FileNotFoundException(bestandpad, "niet gevonden");
-
-
-
         List<string[]> data = new List<string[]>();
 
         try {

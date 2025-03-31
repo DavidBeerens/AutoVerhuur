@@ -1,11 +1,10 @@
 ﻿using AutoVerhuurProject.Domein.DTOs;
-using AutoVerhuurProject.Domein.Interfaces;
 using AutoVerhuurProject.Domein.Models;
 using Microsoft.Data.SqlClient;
 
 namespace AutoVerhuurProject.Persistentie;
 
-public class AutoRepository : IAutoRepositoryFull
+public class AutoRepository
 {
     private readonly string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=AutoVerhuurDB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
     public List<string> errors = new List<string>();
@@ -168,14 +167,5 @@ public class AutoRepository : IAutoRepositoryFull
 
         using var command = new SqlCommand(query, connection);
         command.ExecuteNonQuery();
-    }
-
-
-    public void Add(AutoDto auto) {
-        throw new NotImplementedException();
-    }
-
-    public AutoDto? GetByNummerplaat(string nummerplaat) {
-        throw new NotImplementedException();
     }
 }
